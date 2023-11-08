@@ -1,0 +1,21 @@
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore temporary files
+*.pyc
+*.pyo
+*.swp
+*~
+
+# Ignore log files
+*.log
+
+data/
+__pycache__/
+
+# Ignore virtualenv
+venv/
+
+lightning_logs/
