@@ -287,7 +287,7 @@ class FovConv2dReg(torch.nn.Module):
                 _crop_pads[-1] = custom_model_padding + dst_extra_crop_pad
 
         # [debug only]
-        # self.__set_debug_weights(0)
+        self.__set_debug_weights(0)
 
         # computing coordinates of each region (w.r.t. the frame centered in FOA (initially assumed to be in (0,0)).)
         # (warning: coordinates are [None, None] for the complementary-last region)

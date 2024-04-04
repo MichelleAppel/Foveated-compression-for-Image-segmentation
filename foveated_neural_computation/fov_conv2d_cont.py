@@ -47,7 +47,7 @@ class FovConv2dCont(torch.nn.Module):
                 super(Conv2d, self).__init__(*_args, **_kwargs)
 
                 # [debug only]
-                # self.__set_debug_weights(1)
+                self.__set_debug_weights(0)
 
             def forward(self, x, foa_xy):
                 return super().forward(x)
